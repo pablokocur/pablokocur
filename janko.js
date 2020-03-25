@@ -6,7 +6,7 @@ const bot = new discord.Client({disableEveryone: false});
 module.exports = {
   bot: bot
 }
-bot.login(process.env.token6)
+bot.login(process.env.token)
 bot.on("ready", async => {
   console.log(`janko online`)
 bot.user.setStatus('dnd')
