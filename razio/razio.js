@@ -12,7 +12,7 @@ async function main(){
     })
       const page = await browser.newPage()
       await page.setDefaultNavigationTimeout(0); 
-      page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30')
+      await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3419.0 Safari/537.36');
       await page.goto('https://www.margonem.pl/', {waitUntil: "networkidle2"}); 
       const but = await page.$('a.enable-old-page')
       await but.click()
