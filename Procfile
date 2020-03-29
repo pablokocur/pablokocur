@@ -1,2 +1,2 @@
 JANKO: node janko.js
-TARMUS: node tarmus.js
+RAZIO: node razio.js
