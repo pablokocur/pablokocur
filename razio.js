@@ -9,7 +9,7 @@ bot.login(process.env.token);//process.env.token
 bot.on("ready", () => {
 
     console.log("alek on");
-    bot.user.setActivity('RAZIO', { type: 'WATCHING' }); //PLAYING, STREAMING, LISTENING, WATCHING, CUSTOM_STATUS
+    bot.user.setActivity('ALEK', { type: 'WATCHING' }); //PLAYING, STREAMING, LISTENING, WATCHING, CUSTOM_STATUS
 });
 
 client = new Client('943d5f841e921509867c274dbf6e16c8', {
@@ -33,7 +33,7 @@ async function main(){
       const but = await page.$('a.enable-old-page')
       await but.click()
       await page.waitFor('input[id=ulogin]', { timeout: 0});
-      await page.$eval('input[id=ulogin]', el => el.value = 'naczelnyprzycpaniec');
+      await page.$eval('input[id=ulogin]', el => el.value = 'rokkkit4');
       await page.$eval('input[id=upass]', el => el.value = 'kubatoidiota123');
       await page.$eval('button[id=loginbutton]', el => el.click());
       await page.waitFor('button[id=enterbutton]', { timeout: 0});
@@ -95,7 +95,7 @@ async function main(){
     }
     async function masno(){  
       try{
-        await page.click("#npc16818")
+        await page.click("#npc62345")
         await page.waitFor(1500)
       } catch (e) {} 
     }
